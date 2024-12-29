@@ -44,7 +44,7 @@ enable-model-rate-limit: false
 enable-custom-home-models: false
 
 # 数据库配置 (账号:密码@tcp(数据库地址:端口)/数据库名?charset=utf8mb4&parseTime=True&loc=Local)
-db-uri: "root:123456@tcp(localhost:3306)/aidea_server?charset=utf8mb4&parseTime=True&loc=Local"
+db-uri: "root:123456@tcp(localhost:13306)/aidea_server?charset=utf8mb4&parseTime=True&loc=Local"
 
 # Redis 配置
 redis-host: localhost
@@ -53,10 +53,10 @@ redis-password: "123456"
 
 # 代理服务器
 # 如果启用了 xxx-autoproxy，则该选项必须
-socks5-proxy: 127.0.0.1:1080
+# socks5-proxy: 127.0.0.1:1080
 # HTTP 代理放置，支持 http、https、socks5，代理类型由 URL schema 决定，如果 scheme 为空，则默认为 http
 # 注意：配置 proxy-url 后， socks5-proxy 配置失效
-proxy-url: ""
+# proxy-url: ""
 
 # 任务队列：用于处理图片生成、邮件发送、短信发送、用户注册等耗时任务
 # 这里指任务队列工作线程（Goroutine）数量，设置为 0 则不启用任务队列，该进程实例无法处理上述任务
@@ -83,9 +83,9 @@ openai-autoproxy: false
 # OpenAI 服务配置
 openai-organization: ""
 # OpenAI 服务地址，可以配置多个，用于负载均衡
-openai-servers: [ "https://api.openai.com/v1" ]
+openai-servers: [ "https://oneapi.fastgpt.in" ]
 # OpenAI API Key，可以配置多个，用于负载均衡
-openai-keys: [ "sk-xxxxxxxxxxxxxxxx" ]
+openai-keys: [ "sk-93c94OZK9Ha1IzI7Ae8e45712e8a4cA0A23c534f86Fe711f" ]
 
 # Azure OpenAI 服务配置
 #openai-azure: true
@@ -317,11 +317,11 @@ translate-appkey: ""
 
 # 用于提供图片存储服务，图片上传、图片下载、缩略图生成等
 
-storage-appkey: ""
-storage-secret: ""
-storage-bucket: "aicode"
+storage-appkey: "YDaZiPf7w_XpcaAjqBkx86NVB1o9NHZvHBTPWXvT"
+storage-secret: "yuZbWaHG6qg4zPtq5doTtk0S8AfW5cey9VMZ_8yr"
+storage-bucket: "javis"
 # 七牛云存储资源访问域名（也可以用 CDN 域名），例如 https://cdn.example.com
-storage-domain: https://cdn.example.com
+storage-domain: snb8ks06e.hd-bkt.clouddn.com
 
 # 七牛云存储回调地址，用于上传后的回调通知(可选)
 # 以下是七牛云官方解释：

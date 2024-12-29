@@ -4,6 +4,11 @@ import (
 	"context"
 	"errors"
 	"fmt"
+	"net/http"
+	"runtime/debug"
+	"strings"
+	"time"
+
 	"github.com/go-redis/redis_rate/v10"
 	"github.com/mylxsw/aidea-server/api/billing"
 	"github.com/mylxsw/aidea-server/api/openai"
@@ -12,10 +17,6 @@ import (
 	"github.com/mylxsw/aidea-server/pkg/service"
 	"github.com/mylxsw/aidea-server/pkg/token"
 	"github.com/mylxsw/aidea-server/pkg/youdao"
-	"net/http"
-	"runtime/debug"
-	"strings"
-	"time"
 
 	"github.com/mylxsw/aidea-server/config"
 	"github.com/mylxsw/aidea-server/server/auth"

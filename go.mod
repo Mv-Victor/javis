@@ -2,7 +2,7 @@ module github.com/mylxsw/aidea-server
 
 go 1.21
 
-toolchain go1.21.4
+toolchain go1.21.9
 
 require (
 	github.com/Timothylock/go-signin-with-apple v0.2.0
